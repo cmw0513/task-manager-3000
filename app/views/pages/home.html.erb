@@ -22,8 +22,8 @@
   <% @testimonials.each do |testimonial| %>
     <div class="testimonial">
       <img src="http://lorempixel.com/150/150/people/<%= testimonial.id %>"><br>
-      <b><%= testimonial.name %></b><br>
-      <i><%= testimonial.position %></i><br>
+      <div class="name"><%= testimonial.name %></div>
+      <div class="position"><%= testimonial.position %></div>
       <quote><%= testimonial.quote %></quote>
     </div>
   <% end %>

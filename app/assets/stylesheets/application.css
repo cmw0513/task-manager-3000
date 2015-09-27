@@ -35,9 +35,26 @@
 }
 
 .testimonial {
-  width: 33%;
+  width: 30%;
   float: left;
   text-align: center;
+  padding: 10px;
+}
+
+.testimonial .name {
+  font-weight: bold;
+  color: #333;
+}
+
+.testimonial .position {
+  font-style: italic;
+  color: #666;
+}
+
+.testimonial quote {
+  display: block;
+  margin-top: 10px;
+  color: #000;
 }
 
 .footer {
