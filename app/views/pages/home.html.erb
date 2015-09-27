@@ -1,0 +1,28 @@
+<h1>Task Manager Pro 3000</h1>
+
+<h2>Example of task list</h2>
+
+<ul>
+  <% @tasks.each do |task| %>
+    <li>
+      <%= task.done? ? "[X]" : "[ ]" %>
+      <%= task.description %>
+      <% if task.due_date %>
+        (due <%= task.due_date.strftime("%B %d") %>)
+      <% end %>
+    </li>
+  <% end %>
+</ul>
+
+<h2>What they say about our service</h2>
+
+<div class="testimonials">
+  <% @testimonials.each do |testimonial| %>
+    <div class="testimonial">
+      <img src="http://lorempixel.com/150/150/people/<%= testimonial.id %>"><br>
+      <b><%= testimonial.name %></b><br>
+      <i><%= testimonial.position %></i><br>
+      <quote><%= testimonial.quote %></quote>
+    </div>
+  <% end %>
+</div>
