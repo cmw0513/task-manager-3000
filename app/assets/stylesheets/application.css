@@ -30,8 +30,15 @@
   min-height: 600px;
 }
 
-.testimonials h2 {
-  text-align: center;
+.tasks {
+  width: 400px;
+  margin: auto;
+  background-color: #ffc;
+  padding: 20px;
+}
+
+h1, h2 {
+ text-align: center;
 }
 
 .testimonial {

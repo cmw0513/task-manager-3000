@@ -1,19 +1,22 @@
 <h1>Task Manager Pro 3000</h1>
 
-<h2>Example of task list</h2>
+<div class="tasks">
 
-<ul>
-  <% @tasks.each do |task| %>
-    <li>
-      <%= task.done? ? "[X]" : "[ ]" %>
-      <%= task.description %>
-      <% if task.due_date %>
-        (due <%= task.due_date.strftime("%B %d") %>)
-      <% end %>
-    </li>
-  <% end %>
-</ul>
+  <h2>Example of task list</h2>
 
+  <ul>
+    <% @tasks.each do |task| %>
+      <li>
+        <%= task.done? ? "[X]" : "[ ]" %>
+        <%= task.description %>
+        <% if task.due_date %>
+          (due <%= task.due_date.strftime("%B %d") %>)
+        <% end %>
+      </li>
+    <% end %>
+  </ul>
+
+</div>
 
 <div class="testimonials">
 
