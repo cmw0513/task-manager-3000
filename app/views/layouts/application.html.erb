@@ -4,11 +4,19 @@
   <title>Demo</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,700,800' rel='stylesheet' type='text/css'>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-<%= yield %>
+<div class="container">
+  <div class="main">
+    <%= yield %>
+  </div>
+  <div class="footer">
+    Copyright © 2015 Le Wagon, Inc.
+  </div>
+</div>
 
 </body>
 </html>

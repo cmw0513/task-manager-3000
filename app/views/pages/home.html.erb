@@ -14,9 +14,11 @@
   <% end %>
 </ul>
 
-<h2>What they say about our service</h2>
 
 <div class="testimonials">
+
+  <h2>What they say about our service</h2>
+
   <% @testimonials.each do |testimonial| %>
     <div class="testimonial">
       <img src="http://lorempixel.com/150/150/people/<%= testimonial.id %>"><br>
@@ -25,4 +27,5 @@
       <quote><%= testimonial.quote %></quote>
     </div>
   <% end %>
+
 </div>
