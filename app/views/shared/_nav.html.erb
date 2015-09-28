@@ -1,4 +1,11 @@
 <div class="nav">
+  <% if account_signed_in? %>
+    <%= current_account.email %>
+    <%= link_to("sign out", destroy_account_session_path, method: :delete) %>
+  <% else %>
+    <%= link_to("sign in", new_account_session_path) %>
+    <%= link_to("sign up", new_account_registration_path) %>
+  <% end %>
   <a href="#">Products</a>
   <a href="#">Plans</a>
   <a href="#">About us</a>
