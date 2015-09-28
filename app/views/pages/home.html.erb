@@ -23,12 +23,7 @@
   <h2>What they say about our service</h2>
 
   <% @testimonials.each do |testimonial| %>
-    <div class="testimonial">
-      <img src="http://lorempixel.com/150/150/people/<%= testimonial.id %>"><br>
-      <div class="name"><%= testimonial.name %></div>
-      <div class="position"><%= testimonial.position %></div>
-      <quote><%= testimonial.quote %></quote>
-    </div>
+    <%= render partial: "testimonials/testimonial", object: testimonial %>
   <% end %>
 
 </div>
