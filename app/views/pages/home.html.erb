@@ -7,11 +7,9 @@
   <ul>
     <% @tasks.each do |task| %>
       <li>
-        <%= task.done? ? "[X]" : "[ ]" %>
+        <%= task_done(task) %>
         <%= task.description %>
-        <% if task.due_date %>
-          (due <%= task.due_date.strftime("%B %d") %>)
-        <% end %>
+        <%= task_due_date(task) %>
       </li>
     <% end %>
   </ul>
