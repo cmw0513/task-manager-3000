@@ -7,4 +7,8 @@ class Account < ActiveRecord::Base
   def bar
     "bar" * 10
   end
+
+  def foo
+    "foo"
+  end
 end
