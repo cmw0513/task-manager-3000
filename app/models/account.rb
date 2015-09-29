@@ -3,4 +3,8 @@ class Account < ActiveRecord::Base
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
+
+  def foo
+    "foo"
+  end
 end
